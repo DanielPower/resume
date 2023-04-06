@@ -5,23 +5,36 @@
     <title>Daniel Power</title>
     <style>
       @font-face {
+        font-family: Berkeley;
+        src: url("fonts/berkeley.woff2");
+      }
+      @font-face {
         font-family: Nerd Font;
-        src: url("nerd_font.ttf");
+        src: url("fonts/nerd_font.ttf");
       }
       html {
-        font-family: sans-serif;
+        font-family: Berkeley;
+        font-weight: 100;
+        font-size: 14px;
       }
       h1 {
         text-align: center;
+        font-weight: 300;
       }
       h2 {
         border-bottom: 1px solid black;
+        font-weight: 200;
+      }
+      h3 {
+        font-weight: 200;
       }
       a {
         color: black;
       }
-      a:hover {
-        color: revert;
+      p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
       }
       .space-between {
         display: flex;
@@ -30,7 +43,7 @@
       .title {
       }
       .date {
-        font-weight: 700;
+        font-weight: 400;
       }
       .icon {
         font-family: Nerd Font;
@@ -87,9 +100,18 @@
       <span class="job-title">Teaching Assistant</span>
       <span class="date">September 2021 - December 2021</span>
     </div>
+    <p>
+      Debugged and graded student assignemnts for 3rd year course on heuristic
+      search based artificial intelligence.
+    </p>
     <div class="space-between">
       <span class="job-title">Research Assistant</span>
       <span class="date">June 2019 - September 2019</span>
     </div>
+    <p>
+      Used predictive nueral networks as a model of the human visual system for
+      the purpose of studying the differences in the brains of people with
+      schizophrenia.
+    </p>
   </body>
 </html>
